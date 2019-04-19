@@ -1,0 +1,15 @@
+<div *ngIf="specificMember === null">
+  <h4>Loading Profile</h4>
+</div>
+<div *ngIf="specificMember">
+    <h3>General Info</h3>
+    <div>
+      <h4>ID</h4>
+      <p>{{ specificMember.id }}</p>
+      <h4>Name</h4>
+      <p>{{ specificMember.name }}</p>
+      <h4>Weight</h4>
+      <p>{{ specificMember.profileImage }}</p>
+    </div>
+  </div>
+</div>
